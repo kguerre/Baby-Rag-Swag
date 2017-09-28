@@ -1,0 +1,30 @@
+{
+  "name": "brs",
+  "version": "1.0.0",
+  "description": "ecommerce site for baby clothes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kguerre/Baby-Rag-Swag.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kguerre/Baby-Rag-Swag/issues"
+  },
+  "homepage": "https://github.com/kguerre/Baby-Rag-Swag#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "mongoose": "^4.11.13",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.12.1"
+  }
+}
