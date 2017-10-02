@@ -1,15 +1,15 @@
 const db = require("../models/product");
 
-// Defining methods for the booksController
+// Defining methods for the productController
 module.exports = {
-//get all apparel
+  //get all apparel
   findAll: function(req, res) {
     db.Product
       .find(req.query)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-//get item by id
+  //get item by id
   findById: function(req, res) {
     db.Product
       .findById(req.params.id)
@@ -22,7 +22,7 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-//update item 
+  //update item
   update: function(req, res) {
     db.Product
       .findOneAndUpdate({ _id: req.params.id }, req.body)

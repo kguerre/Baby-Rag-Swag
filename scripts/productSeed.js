@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const db = require("../models");
+const db = require("../models/Product");
 mongoose.Promise = global.Promise;
 
 
@@ -16,84 +16,84 @@ const productSeed = [
     title: "BRS Striped Tee",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 50,
-    price: 24.50
+    price: 24
   },
   {
     item: "tops",
     title: "Basic BRS Tee",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 50,
-    price: 20.00
+    price: 20
   },
   {
     item: "tops",
     title: "Navy BRS Baseball Tee",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 50,
-    price: 20.00
+    price: 20
   },
   {
     item: "tops",
     title: "Camo BRS Baseball Tee",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 50,
-    price: 30.00
+    price: 30
   },
   {
     item: "tops",
     title: "BRS Basic Tank",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 50,
-    price: 25.00
+    price: 25
   },
   {
     item: "tops",
     title: "Limited BRS Logo Tank",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 20,
-    price: 45.00
+    price: 45
   },
   {
     item: "bottoms",
     title: "Basic BRS Baby Joggers",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 60,
-    price: 30.00
+    price: 30
   },
   {
     item: "bottoms",
     title: "Camo BRS Baby Joggers",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 55,
-    price: 30.00
+    price: 30
   },
   {
     item: "bottoms",
     title: "BRS Leggings",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 55,
-    price: 30.00
+    price: 30
   },
   {
     item: "bottoms",
     title: "BRS Baby Sweats",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 55,
-    price: 30.00
+    price: 30
   },
   {
     item: "bottoms",
     title: "BRS Shorts",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 55,
-    price: 20.00
+    price: 20
   },
   {
     item: "bottoms",
     title: "Basic BSR Pants",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 60,
-    price: 25.00
+    price: 25
   }
 ];
 
