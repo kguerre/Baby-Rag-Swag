@@ -7,15 +7,19 @@ const productController = require("../../controllers/productcontroller");
 router
   .route("/")
   .get(productController.findAll)
-  .post(productController.create);
+  .post(productController.create)
+  .get(userController.findAllUsers)
+  .post(userController.createUser);
 
 // Matches with "/api/products/:id"
 router
   .route("/:id")
   .get(productController.findById)
-  .get(userController.findUser)
   .put(productController.update)
-  .delete(productController.remove);
+  .delete(productController.remove)
+  .get(userController.findUserById)
+  .put(userController.updateUser)
+  .delete(userController.removeUser);
 
 
 module.exports = router;

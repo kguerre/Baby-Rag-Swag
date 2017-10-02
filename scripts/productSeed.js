@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const db = require("../models/Product");
+let db = require("../models/product");
 mongoose.Promise = global.Promise;
 
 

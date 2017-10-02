@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-let db = require("../models/User");
+let db = require("../models/user");
 mongoose.Promise = global.Promise;
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/brsreact", {
@@ -38,3 +38,5 @@ db.User
     console.error(err);
     process.exit(1);
   });
+
+  
