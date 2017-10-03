@@ -1,35 +1,29 @@
 const mongoose = require("mongoose");
-let db = require("../models/user");
+let User = require("../models/user");
+// let db = mongoose.connect;
 mongoose.Promise = global.Promise;
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/brsreact", {
   useMongoClient: true
+}).then(function(){
+    console.log("connected");
 });
+
 
 const userSeed = [
   {
+    _id: "1",
     name: "test",
     email: "test@gmail.com",
     password: "password",
     cart: []
-  },
-   {
-    name: "test2",
-    email: "test2@gmail.com",
-    password: "abc123",
-    cart: []
-  },
-   {
-    name: "test3",
-    email: "test3@gmail.com",
-    password: "123456",
-    cart: []
   }
 ];
 
-db.User
+// console.log(User);
+User
   .remove({})
-  .then(() => db.User.collection.insertMany(userSeed))
+  .then(() => User.collection.insertMany(userSeed))
   .then(data => {
     console.log(data.insertedIds.length + " products inserted!");
     process.exit(0);
@@ -38,5 +32,3 @@ db.User
     console.error(err);
     process.exit(1);
   });
-
-  
