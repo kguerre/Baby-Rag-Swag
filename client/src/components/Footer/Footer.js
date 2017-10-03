@@ -1,18 +1,10 @@
 import React from "react";
-import { Footer } from "react-materialize";
+import { Segment } from "semantic-ui-react";
 
-// export const Footer = () => (
-
-// );
-const Footerhome = () => (
-  <Footer
-    copyrights="Footer goes here"
-    moreLinks={
-      <a className="grey-text text-lighten-4 right" href="#!">
-        Logo will go here
-      </a>
-    }
-  />
+const SegmentExampleColored = () => (
+  <div>
+    <Segment inverted color="black">Copyright &copy; 2017 KMC</Segment>
+  </div>
 );
 
-export default Footerhome;
+export default SegmentExampleColored;

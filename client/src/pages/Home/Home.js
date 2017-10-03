@@ -3,21 +3,19 @@ import Nav from "../../components/Nav";
 // import Menu from "../components/Menu";
 // import helpers from "../../utils/helpers";
 // import { Link } from "react-router-dom";
-import Carouselimage from "../../components/Carousel";
+import Carousel from "../../components/Carousel";
 import Featured from "../../components/Featured";
 import SiteMap from "../../components/SiteMap";
-import Footerhome from "../../components/Footer";
-import Menu from "../../components/Menu";
+import Footer from "../../components/Footer";
 
 class Home extends Component {
   render() {
     return <div>
         <Nav />
-        <Menu />
-        <Carouselimage />
+        <Carousel />
         <Featured />
         <SiteMap />
-        <Footerhome />
+        <Footer />
       </div>;
   }
 }
