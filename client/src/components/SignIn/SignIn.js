@@ -14,21 +14,21 @@ import SignUp from "../../components/SignUp";
 
 // );
 
-const SignInButton = () => (
-  <div class="signInBtn">
-    <Collapsible popout defaultActiveKey={1}>
-      <CollapsibleItem header="Sign In" icon="filter_drama">
-        <Row>
-          <Input s={9} label="Username" />
-          <Input type="password" label="Password" s={9} />
-        </Row>
-        <div>
-          <Modal />
-          <SignUp class="signUpBtn" />
-          <Modal />
-        </div>
-      </CollapsibleItem>
-    </Collapsible>
-  </div>
-);
-export default SignInButton;
+// const SignInButton = () => (
+//   <div class="signInBtn">
+//     <Collapsible popout defaultActiveKey={1}>
+//       <CollapsibleItem header="Sign In" icon="filter_drama">
+//         <Row>
+//           <Input s={9} label="Username" />
+//           <Input type="password" label="Password" s={9} />
+//         </Row>
+//         <div>
+//           <Modal />
+//           <SignUp class="signUpBtn" />
+//           <Modal />
+//         </div>
+//       </CollapsibleItem>
+//     </Collapsible>
+//   </div>
+// );
+// export default SignInButton;

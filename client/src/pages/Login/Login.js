@@ -13,11 +13,7 @@ class Login extends Component {
     return (
       <div>
         <Nav />
-
-        <div class="login">
-          <SignIn />
-        </div>
-
+        <SignUp />
         <SiteMap />
         <Footer />
       </div>

@@ -7,18 +7,18 @@ import Carouselimage from "../../components/Carousel";
 import Featured from "../../components/Featured";
 import SiteMap from "../../components/SiteMap";
 import Footerhome from "../../components/Footer";
+import Menu from "../../components/Menu";
 
 class Home extends Component {
   render() {
-    return (
-      <div>
+    return <div>
         <Nav />
+        <Menu />
         <Carouselimage />
         <Featured />
         <SiteMap />
         <Footerhome />
-      </div>
-    );
+      </div>;
   }
 }
 
