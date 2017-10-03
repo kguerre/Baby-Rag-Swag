@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "css-loader": "^0.28.7",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react-materialize": "^1.0.14",
+    "react-scripts": "1.0.14",
+    "style-loader": "^0.18.2"
   },
   "scripts": {
     "start": "react-scripts start",
