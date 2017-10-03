@@ -1,11 +1,12 @@
-import React from "react";
+import React, {Component} from "react";
 import {
   Modal,
   Button,
   Row,
   Input,
   Collapsible,
-  CollapsibleItem
+  CollapsibleItem, 
+  Icon
 } from "react-materialize";
 import SignUp from "../../components/SignUp";
 // import { Link } from "react-router-dom";
@@ -32,3 +33,26 @@ import SignUp from "../../components/SignUp";
 //   </div>
 // );
 // export default SignInButton;
+
+class SignIn extends Component {
+  render() {
+    return (
+      <div className="sign-in">
+        <h1>Sign In</h1>
+        <Row>
+          <Input s={3} label="First Name" validate>
+            <Icon>account_circle</Icon>
+          </Input>
+        </Row>
+        <Row>
+          <Input s={3} label="Telephone" validate type="tel">
+            <Icon>phone</Icon>
+          </Input>
+        </Row>
+      </div>
+    );
+  }
+}
+
+export default SignIn;
+

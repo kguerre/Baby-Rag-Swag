@@ -20,17 +20,19 @@ import { Modal, Button, Row, Input, Icon } from "react-materialize";
 
 class SignUp extends Component {
   render() {
-    return <div>
-        <h1>Hello</h1>
+    return <div className="sign-up">
+        <h1>Sign Up</h1>
         <Row>
-          <Input s={6} label="First Name" validate>
+          <Input s={3} label="First Name" validate>
             <Icon>account_circle</Icon>
           </Input>
-          <Input s={6} label="Telephone" validate type="tel">
+          </Row>
+          <Row>
+          <Input s={3} label="Telephone" validate type="tel">
             <Icon>phone</Icon>
           </Input>
         </Row>
-      </div>;
+      </div>
   }
 }
 
