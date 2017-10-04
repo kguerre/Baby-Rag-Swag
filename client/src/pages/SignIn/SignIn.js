@@ -2,23 +2,21 @@ import React, { Component } from "react";
 import Nav from "../../components/Nav";
 // import helpers from "../../utils/helpers";
 // import { Link } from "react-router-dom";
-// import Welcome from "../components/Welcome";
-import SignIn from "../../components/SignIn";
-import SignUp from "../../components/SignUp";
+import SignInForm from "../../components/SignInForm";
 import SiteMap from "../../components/SiteMap";
 import Footer from "../../components/Footer";
 
-class Login extends Component {
+class SignIn extends Component {
   render() {
     return (
       <div>
         <Nav />
-        <SignIn />
-        <SiteMap />
+        <SignInForm />
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default Login;
+export default SignIn;
+

@@ -1,17 +1,20 @@
-import React from "react";
-import { Collapsible, CollapsibleItem } from "react-materialize";
+import React, { Component } from "react";
+import { Menu } from "semantic-ui-react";
 
-const Menu = () => (
-  <Collapsible accordion>
-    <CollapsibleItem header="Menu" icon="filter_drama">
-    <ul>
-      <a href="#"><li>Tops</li></a>
-      <a href="#"><li>Bottoms</li></a>
-      <a href="#"><li>Outerwear</li></a>
-      <a href="#"><li>Accessories</li></a>
-    </ul>
-    </CollapsibleItem>
-  </Collapsible>
-);
+export default class MenuExampleText extends Component {
+  state = { activeItem: "closest" };
 
-export default Menu;
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
+  render() {
+    const { activeItem } = this.state;
+
+    return <Menu text>
+        <Menu.Item header>Apparel</Menu.Item>
+        <Menu.Item name="tops" active={activeItem === "tops"} onClick={this.handleItemClick} />
+        <Menu.Item name="bottoms" active={activeItem === "bottoms"} onClick={this.handleItemClick} />
+        <Menu.Item name="outerwear" active={activeItem === "outerwear"} onClick={this.handleItemClick} />
+        <Menu.Item name="accessories" active={activeItem === "accessories"} onClick={this.handleItemClick} />
+      </Menu>;
+  }
+}

@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 // import './index.css';
 // import App from './App';
 import Home from "./pages/Home";
-import Login from "./pages/Login";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<SignUp />, document.getElementById('root'));
 registerServiceWorker();

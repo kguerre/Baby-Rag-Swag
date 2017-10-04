@@ -7,12 +7,17 @@ const SegmentExampleInverted = () => (
       <Grid.Row columns={3}>
         <Grid.Column>
           <ul>
-            <li>Stuff</li>
+            <li>Apparel</li>
+            <li>Tops</li>
+            <li>Bottoms</li>
+            <li>Outerwear</li>
+            <li>Accessories</li>
           </ul>
         </Grid.Column>
         <Grid.Column>
           <ul>
-            <li>Stuff</li>
+            <li>About KMC</li>
+            <li>Contact Us</li>
           </ul>
         </Grid.Column>
         <Grid.Column>
