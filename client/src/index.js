@@ -7,5 +7,5 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<SignUp />, document.getElementById('root'));
+ReactDOM.render(<Home />, document.getElementById('root'));
 registerServiceWorker();

@@ -3,7 +3,7 @@ import { Button, Form, Message, Grid, Segment, Header } from "semantic-ui-react"
 import "./SignUpForm.css";
 
 const FormExampleSuccess = () => (
-  <div>
+  <div className="sign-up=form">
     <style>{`
       body > div,
       body > div > div,

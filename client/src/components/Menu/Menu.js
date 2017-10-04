@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
+import "./Menu.css";
 
 export default class MenuExampleText extends Component {
   state = { activeItem: "closest" };
@@ -9,7 +10,7 @@ export default class MenuExampleText extends Component {
   render() {
     const { activeItem } = this.state;
 
-    return <Menu text>
+    return <Menu text className="menu">
         <Menu.Item header>Apparel</Menu.Item>
         <Menu.Item name="tops" active={activeItem === "tops"} onClick={this.handleItemClick} />
         <Menu.Item name="bottoms" active={activeItem === "bottoms"} onClick={this.handleItemClick} />

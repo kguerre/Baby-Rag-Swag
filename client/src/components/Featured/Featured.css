@@ -1,1 +1,8 @@
-.card {}
+div.column.featured-column{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+div.centered.four.column.row.featured-row{
+    margin: 0 !important;
+    padding: 0 !important;
+}

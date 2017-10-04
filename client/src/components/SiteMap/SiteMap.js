@@ -1,5 +1,6 @@
 import React from "react";
-import { Segment, Grid } from "semantic-ui-react";
+import { Segment, Grid, Image } from "semantic-ui-react";
+import "./SiteMap.css";
 
 const SegmentExampleInverted = () => (
   <Segment color="gray">
@@ -7,7 +8,7 @@ const SegmentExampleInverted = () => (
       <Grid.Row columns={3}>
         <Grid.Column>
           <ul>
-            <li>Apparel</li>
+            <li className="bold">Apparel</li>
             <li>Tops</li>
             <li>Bottoms</li>
             <li>Outerwear</li>
@@ -16,14 +17,15 @@ const SegmentExampleInverted = () => (
         </Grid.Column>
         <Grid.Column>
           <ul>
-            <li>About KMC</li>
-            <li>Contact Us</li>
+            <li className="bold">About KMC</li>
+            <li className="bold">Contact Us</li>
           </ul>
         </Grid.Column>
         <Grid.Column>
-          <ul>
-            <li>Stuff</li>
-          </ul>
+          <a href="#"><Image src="assets/images/Facebook.png" className="social-media" /></a>
+          <a href="#"><Image src="assets/images/Instagram.png" className="social-media" /></a>
+          <a href="#"><Image src="assets/images/Twitter.png" className="social-media" /></a>
+          <a href="#"><Image src="assets/images/Snapchat.png" className="social-media" /></a>
         </Grid.Column>
       </Grid.Row>
     </Grid>
