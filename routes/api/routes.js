@@ -21,6 +21,11 @@ router
   .get(userController.findUserById)
   // .put(userController.updateUser)
   // .delete(userController.removeUser);
+  .get(cartController.findCartById)
+  .get(cartController.createCart)
+  .get(cartController.updateCart)
+
+
 
 
 module.exports = router;
