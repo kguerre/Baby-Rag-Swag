@@ -1,6 +1,14 @@
-import React from "react";
-// import { Link } from "react-router-dom";
+import React from 'react'
+import { Breadcrumb } from 'semantic-ui-react'
 
-// export const Pages = () => (
+const BreadcrumbExampleStandard = () => (
+  <Breadcrumb>
+    <Breadcrumb.Section link>Home</Breadcrumb.Section>
+    <Breadcrumb.Divider />
+    <Breadcrumb.Section link>Store</Breadcrumb.Section>
+    <Breadcrumb.Divider />
+    <Breadcrumb.Section active>T-Shirt</Breadcrumb.Section>
+  </Breadcrumb>
+)
 
-// );
+export default BreadcrumbExampleStandard

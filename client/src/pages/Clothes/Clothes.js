@@ -1,18 +1,21 @@
-import React, { Component } from "react";
-import Nav from "../components/Nav";
-import Header from "../components/Header";
-// import helpers from "../../utils/helpers";
-// import { Link } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
-import Shop from "../components/Shop";
-import Pages from "../components/Pages";
-import SiteMap from "../components/SiteMap";
-import Footer from "../components/Footer";
+import React, { Component } from 'react';
+// -Header.js - Clothing Title Header
+// -Sidebar.js -Sidebar Clothes Menu
+// -Shop.js -the clothes display
+// -Pages.js -page navigation (1,2,3…)
+
+
 
 class Clothes extends Component {
-  render() {
-    return <h1>Hello World</h1>;
+    render() {
+      return (
+        <div>
+          Welcome to the clothes Page
+        </div>
+      );
+    }
   }
-}
 
-export default Clothes;
+  export default Clothes; 
+
+
