@@ -6,7 +6,8 @@ import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Clothes from "./pages/Clothes";
+import Type from "./pages/Type";
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Clothes />, document.getElementById('root'));
+ReactDOM.render(<Type />, document.getElementById('root'));
 registerServiceWorker();

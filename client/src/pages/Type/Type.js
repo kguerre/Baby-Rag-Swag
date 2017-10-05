@@ -4,6 +4,7 @@ import Menu from "../../components/Menu";
 // import helpers from "../../utils/helpers";
 // import { Link } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
+import Content from "../../components/Content";
 import Footer from "../../components/Footer";
 
 class Type extends Component {
@@ -11,7 +12,8 @@ class Type extends Component {
     return (
       <div>
         <Nav />
-
+        <Menu />
+        <Content />
         <Footer />
       </div>
     );
