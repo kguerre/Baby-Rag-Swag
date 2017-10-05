@@ -4,21 +4,18 @@ import Menu from "../../components/Menu";
 // import helpers from "../../utils/helpers";
 // import { Link } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
-import Pages from "../../components/Pages";
 import Footer from "../../components/Footer";
 
-class Clothes extends Component {
+class Checkout extends Component {
   render() {
     return (
       <div>
         <Nav />
-        <Sidebar />
-        <Pages />
+        
         <Footer />
       </div>
     );
   }
 }
 
-export default Clothes;
-
+export default Checkout;

@@ -1,10 +1,11 @@
 import React from "react";
-import { Segment } from "semantic-ui-react";
+import { Segment, Grid, Row } from "semantic-ui-react";
+import "./Footer.css";
 
 const SegmentExampleColored = () => (
-  <div>
-    <Segment inverted color="black" size="large">Copyright &copy; 2017 KMC</Segment>
-  </div>
+  <Grid.Row>
+    <Segment inverted color="black" size="large" className="footer">Copyright &copy; 2017 KMC</Segment>
+  </Grid.Row>
 );
 
 export default SegmentExampleColored;
