@@ -1,0 +1,11 @@
+img.ui.image.carousel{
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 450px;
+    width: 550px;
+}
+
+div.column.carousel-column{
+    margin: 0 !important;
+    padding: 0 !important;
+}

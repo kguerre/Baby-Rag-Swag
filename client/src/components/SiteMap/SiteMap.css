@@ -1,0 +1,12 @@
+li{
+    list-style-type: none !important;
+}
+li.bold{
+    font-weight: bold
+}
+img.ui.image.social-media{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 1em;
+}
