@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import {
   Button,
   Form,
@@ -10,7 +10,28 @@ import {
 } from "semantic-ui-react";
 import "./SignInForm.css";
 
-const LoginForm = () => (
+class LoginForm extends Component {
+
+    state = {
+      email: "",
+      password: ""
+    };
+
+handleChange = (event) => {
+  this.setState({[event.target.name]: event.target.value});
+};
+
+handleSubmit = (event) => {
+  event.preventDefault();
+
+  // this.props.setLogin(this.state.email, this.state.password);
+  console.log(this.state.email, this.state.password)
+  // this.props.setPass(this.state.password);
+  this.setState({email:"", password:""});
+
+};
+  render() {
+    return(
   <div className="login-form">
     {/*
       Heads up! The styles below are necessary for the correct render of this example.
@@ -29,13 +50,17 @@ const LoginForm = () => (
         <Header as="h2" color="black" textAlign="center">
          Log-in to your account
         </Header>
-        <Form size="large">
+        <Form size="large" onSubmit= {this.handleSubmit}>
           <Segment stacked>
             <Form.Input
               fluid
               icon="user"
               iconPosition="left"
               placeholder="E-mail address"
+              name = "email"
+              value= {this.state.email}
+              onChange= {this.handleChange}
+              required
             />
             <Form.Input
               fluid
@@ -43,9 +68,13 @@ const LoginForm = () => (
               iconPosition="left"
               placeholder="Password"
               type="password"
+              name = "password"
+              value= {this.state.password}
+              onChange= {this.handleChange}
+              required
             />
 
-            <Button color="blue" fluid size="large">
+            <Button color="blue" fluid size="large" type="submit" >
               Login
             </Button>
           </Segment>
@@ -56,6 +85,7 @@ const LoginForm = () => (
       </Grid.Column>
     </Grid>
   </div>
-);
-
+)
+}
+};
 export default LoginForm;
