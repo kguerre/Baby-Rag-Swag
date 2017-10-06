@@ -1,3 +1,5 @@
 div.ui.black.large.inverted.segment.footer{
     bottom: 0 !important;
+    position: fixed;
+    width: 100%;
 }

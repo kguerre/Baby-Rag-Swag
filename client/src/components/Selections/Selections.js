@@ -17,7 +17,7 @@ class FormExampleSubcomponentControl extends Component {
           <Form.Radio label="Medium" value="md" checked={value === "md"} onChange={this.handleChange} />
           <Form.Radio label="Large" value="lg" checked={value === "lg"} onChange={this.handleChange} />
         </Form.Group>
-        <Form.Button>Submit</Form.Button>
+        <Form.Button type="submit">Add to Cart</Form.Button>
       </Form>;
   }
 }
