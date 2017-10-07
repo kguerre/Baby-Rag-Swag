@@ -1,1 +1,1 @@
-export {default} from "./Pages.js"
+export { default } from "./Pages";

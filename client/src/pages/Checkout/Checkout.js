@@ -4,20 +4,19 @@ import Menu from "../../components/Menu";
 // import helpers from "../../utils/helpers";
 // import { Link } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
-import Content from "../../components/Content";
+import CheckoutContent from "../../components/CheckoutContent";
 import Footer from "../../components/Footer";
 
-class Type extends Component {
+class Checkout extends Component {
   render() {
     return (
       <div>
         <Nav />
-        <Menu />
-        <Content />
+        <CheckoutContent />
         <Footer />
       </div>
     );
   }
 }
 
-export default Type;
+export default Checkout;

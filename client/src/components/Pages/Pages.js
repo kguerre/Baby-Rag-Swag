@@ -1,14 +1,25 @@
-import React from 'react'
-import { Breadcrumb } from 'semantic-ui-react'
+import React, { Component } from "react";
+import { Menu, Row, Grid } from "semantic-ui-react";
+import "./Pages.css";
 
-const BreadcrumbExampleStandard = () => (
-  <Breadcrumb>
-    <Breadcrumb.Section link>Home</Breadcrumb.Section>
-    <Breadcrumb.Divider />
-    <Breadcrumb.Section link>Store</Breadcrumb.Section>
-    <Breadcrumb.Divider />
-    <Breadcrumb.Section active>T-Shirt</Breadcrumb.Section>
-  </Breadcrumb>
-)
+export default class MenuExamplePagination extends Component {
+  state = { activeItem: "1" };
 
-export default BreadcrumbExampleStandard
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
+  render() {
+    const { activeItem } = this.state;
+
+    return (
+    <Grid.Row>
+    <Menu pagination className="pages">
+        <Menu.Item name="1" active={activeItem === "1"} onClick={this.handleItemClick} />
+        <Menu.Item name="2" active={activeItem === "2"} onClick={this.handleItemClick} />
+        <Menu.Item name="3" active={activeItem === "3"} onClick={this.handleItemClick} />
+        <Menu.Item name="4" active={activeItem === "4"} onClick={this.handleItemClick} />
+        <Menu.Item name="5" active={activeItem === "5"} onClick={this.handleItemClick} />
+      </Menu>
+    </Grid.Row>
+    )
+  }
+}
