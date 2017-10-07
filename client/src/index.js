@@ -10,5 +10,5 @@ import Type from "./pages/Type";
 import Checkout from "./pages/Checkout";
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Checkout />, document.getElementById('root'));
+ReactDOM.render(<Clothes />, document.getElementById('root'));
 registerServiceWorker();
