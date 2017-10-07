@@ -8,16 +8,10 @@ import Footer from "../../components/Footer";
 
 class SignIn extends Component {
 
-
-
-
-
   render() {
     return (
       <div>
-        <Nav />
         <SignInForm />
-        <Footer />
       </div>
     )
   }

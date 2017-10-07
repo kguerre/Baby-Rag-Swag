@@ -10,13 +10,10 @@ class SignIn extends Component {
   render() {
     return (
       <div>
-        <Nav />
         <SignUpForm />
-        <Footer />
       </div>
     );
   }
 }
 
 export default SignIn;
-

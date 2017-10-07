@@ -11,9 +11,8 @@ class Checkout extends Component {
   render() {
     return (
       <div>
-        <Nav />
         <CheckoutContent />
-        <Footer />
+
       </div>
     );
   }
