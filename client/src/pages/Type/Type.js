@@ -11,10 +11,8 @@ class Type extends Component {
   render() {
     return (
       <div>
-        <Nav />
         <Menu />
         <Content />
-        <Footer />
       </div>
     );
   }

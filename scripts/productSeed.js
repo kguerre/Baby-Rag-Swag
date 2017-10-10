@@ -14,6 +14,7 @@ const productSeed = [
   {
     product_id: 1,
     item: "tops",
+    image: "/assets/images/baby1.jpeg",
     title: "BRS Striped Tee",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 50,
@@ -22,6 +23,7 @@ const productSeed = [
   {
     product_id: 2,
     item: "tops",
+    image: "/assets/images/baby1.jpeg",
     title: "Basic BRS Tee",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 50,
@@ -30,6 +32,7 @@ const productSeed = [
   {
     product_id: 3,
     item: "tops",
+    image: "/assets/images/baby1.jpeg",
     title: "Navy BRS Baseball Tee",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 50,
@@ -38,6 +41,7 @@ const productSeed = [
   {
     product_id: 4,
     item: "tops",
+    image: "/assets/images/baby1.jpeg",
     title: "Camo BRS Baseball Tee",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 50,
@@ -46,6 +50,7 @@ const productSeed = [
   {
     product_id: 5,
     item: "tops",
+    image: "/assets/images/baby1.jpeg",
     title: "BRS Basic Tank",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 50,
@@ -54,6 +59,7 @@ const productSeed = [
   {
     product_id: 6,
     item: "tops",
+    image: "/assets/images/baby1.jpeg",
     title: "Limited BRS Logo Tank",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 20,
@@ -62,6 +68,7 @@ const productSeed = [
   {
     product_id: 7,
     item: "bottoms",
+    image: "/assets/images/baby1.jpeg",
     title: "Basic BRS Baby Joggers",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 60,
@@ -70,6 +77,7 @@ const productSeed = [
   {
     product_id: 8,
     item: "bottoms",
+    image: "/assets/images/baby1.jpeg",
     title: "Camo BRS Baby Joggers",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 55,
@@ -78,6 +86,7 @@ const productSeed = [
   {
     product_id: 9,
     item: "bottoms",
+    image: "/assets/images/baby1.jpeg",
     title: "BRS Leggings",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 55,
@@ -86,6 +95,7 @@ const productSeed = [
   {
     product_id: 10,
     item: "bottoms",
+    image: "/assets/images/baby1.jpeg",
     title: "BRS Baby Sweats",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 55,
@@ -94,6 +104,7 @@ const productSeed = [
   {
     product_id: 11,
     item: "bottoms",
+    image: "/assets/images/baby1.jpeg",
     title: "BRS Shorts",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 55,
@@ -102,6 +113,7 @@ const productSeed = [
   {
     product_id: 12,
     item: "bottoms",
+    image: "/assets/images/baby1.jpeg",
     title: "Basic BSR Pants",
     description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
     quantity: 60,

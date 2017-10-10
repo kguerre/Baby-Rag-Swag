@@ -1,4 +1,5 @@
 import _ from "lodash";
+import {Link} from "react-router-dom";
 import React from "react";
 import { Button, Header, Icon, Image, Modal, Item, Grid, Row } from "semantic-ui-react";
 
@@ -67,9 +68,11 @@ const ModalExampleScrollingContent = () => (
       </Grid>
     </Modal.Content>
     <Modal.Actions>
+    <Link to= {"/checkout"}>
       <Button primary>
         Proceed to Checkout <Icon name="right chevron" />
       </Button>
+    </Link>
     </Modal.Actions>
   </Modal>
 );

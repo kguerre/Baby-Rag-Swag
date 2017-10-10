@@ -4,12 +4,11 @@ const Schema = mongoose.Schema;
 // const productSchema = require("../../product");
 
 const userSchema = new Schema({
-  _id: {type: Number},
   name: {type: String},
   email: {type: String},
   password: {type: String},
   cart: [{
-    type: Schema.Types.Object,
+    type: Schema.Types.ObjectId,
     ref: "Cart"
   }]
 });
@@ -17,3 +16,23 @@ const userSchema = new Schema({
 const User = mongoose.model("User", userSchema);
 
 module.exports = User;
+
+// User {
+//     _id: 1,
+//     name: 'chris',
+//     ...,
+//     cart: 56
+// }
+//
+// Cart {
+//   id: 3,
+//   userId: 1
+//   list [ 1, 2 , 3]
+// }
+//
+// User.Cart.id
+// new Cart {
+//   id: 56,
+//   1,
+//   list []
+// }

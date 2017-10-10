@@ -1,31 +1,32 @@
-// import React, { Component } from 'react';
-// // import logo from './logo.svg';
-// // import './App.css';
-// import Nav from "./components/Nav";
-// // import Menu from "../components/Menu";
-// // import helpers from "../../utils/helpers";
-// // import { Link } from "react-router-dom";
-// import Carouselimage from "./components/Carousel";
-// import Featured from "./components/Featured";
-// import SiteMap from "./components/SiteMap";
-// import Footerhome from "./components/Footer";
-// import { Modal, Button, Row, Input } from "react-materialize";
+import React from "react";
+import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Clothes from "./pages/Clothes";
+import Type from "./pages/Type";
+import Checkout from "./pages/Checkout";
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
+// import GridExampleVerticallyDivided from "./components/Carousel"
+import registerServiceWorker from "./registerServiceWorker";
+
+const App = () =>
+  <Router>
+    <div>
+    <Nav/>
+    <Switch>
+      <Route exact path= "/" component= {Home} />
+      <Route exact path= "/clothes" component= {Clothes} />
+      <Route exact path= "/type" component= {Type} />
+      <Route exact path= "/signup" component= {SignUp} />
+      <Route exact path= "/signin" component= {SignIn} />
+      <Route exact path= "/checkout" component= {Checkout} />
+      </Switch>
+      <Footer/>
+      </div>
+    </Router>;
 
 
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <h1 className="App-title">Welcome to React</h1>
-//         </header>
-//         <p className="App-intro">
-//           To get started, edit <code>src/App.js</code> and save to reload.
-//         </p>
-//       </div>
-//     );
-//   }
-// }
 
-// export default App;
+export default App;

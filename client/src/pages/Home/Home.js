@@ -9,14 +9,15 @@ import SiteMap from "../../components/SiteMap";
 import Footer from "../../components/Footer";
 
 class Home extends Component {
+
   render() {
     return <div>
-        <Nav />
+
         <Menu />
         <Carousel />
         <Featured />
         <SiteMap />
-        <Footer />
+
       </div>
   }
 }
