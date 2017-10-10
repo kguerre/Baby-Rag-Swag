@@ -15,12 +15,9 @@ export default class MenuExampleSizeMassive extends Component {
         <Menu.Item name="Baby Rag Swag" />
 
         <Menu.Menu position="right">
-        <Link to ="/">
-          <Menu.Item name="home"
-           position="right"
-           active={activeItem === "home"}
-           onClick={this.handleItemClick} />
-          </Link>
+        <Menu.Item>
+          <Link to= "/"><Button primary>Home</Button></Link>
+        </Menu.Item>
           <Menu.Item>
             <ShoppingCartBtn />
           </Menu.Item>

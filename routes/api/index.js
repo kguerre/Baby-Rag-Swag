@@ -5,7 +5,7 @@ const cartRoutes = require("./routes");
 
 
 // Product routes
-router.use("/user", userRoutes);
+// router.use("/user", userRoutes);
 router.use("/product", productRoutes);
 router.use("/cart", cartRoutes);
 

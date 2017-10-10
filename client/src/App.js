@@ -8,6 +8,7 @@ import Type from "./pages/Type";
 import Checkout from "./pages/Checkout";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
+// import GridExampleVerticallyDivided from "./components/Carousel"
 import registerServiceWorker from "./registerServiceWorker";
 
 const App = () =>

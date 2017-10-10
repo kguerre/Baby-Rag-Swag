@@ -8,8 +8,8 @@ router
   .route("/")
   .get(productController.findAll)
   .post(productController.create)
-  .get(userController.findAllUsers)
-  .post(userController.createUser);
+  // .get(userController.findAllUsers)
+  // .post(userController.createUser);
 
 // Matches with "/api/products/:id"
 router

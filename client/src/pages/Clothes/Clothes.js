@@ -11,13 +11,10 @@ class Clothes extends Component {
   render() {
     return (
       <div>
-        <Nav />
         <Sidebar />
         <Pages />
-        <Footer />
       </div>
     )
   }
 }
 export default Clothes;
-
