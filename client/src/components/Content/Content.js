@@ -1,25 +1,56 @@
-import React from "react";
+import React, { Component} from "react";
+import {Link} from "react-router-dom";
+import API from "../../utils/API";
 import { Grid, Image } from "semantic-ui-react";
 import Selections from "../../components/Selections";
 
-const GridExampleVerticallyDivided = () => (
-  <Grid divided="vertically">
+class GridExampleVerticallyDivided extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      images: [],
+      title: "",
+      price: "",
+      description: ""
+    };
+}
+
+
+
+  componentDidMount() {
+    this.getItem();
+  }
+
+  getItem = () => {
+  API.getItem()
+  .then(res => {
+    this.setState({ description: res.data=> product.description,
+                                title: res.data=> product.title,
+                                price: res.data=> product.price,
+                                images: res.data=> product.image})
+                                console.log("hi",res);
+                              })
+  .catch(err => console.log(err));
+}
+
+
+render() {
+  return(<Grid divided="vertically">
     <Grid.Row columns={2}>
       <Grid.Column>
-        <Image src="/assets/images/baby2.jpeg" />
+        <Image src={this.state.images} />
       </Grid.Column>
       <Grid.Column>
-        <h1>BRS Basic Tee</h1>
-        <p>Lorem ipsum dolor sit amet, odio tantas epicurei nam cu, 
-        elit sale deterruisset ei ius. Eum purto zril qualisque an, stet 
-        natum quo ut, nobis saepe impetus usu id. Ut legere possit periculis 
-        per, duo ferri voluptatibus definitiones et, pri no quis etiam. 
-        Cu scaevola comprehensam eos, mea eligendi lobortis an, 
-        ei vis libris deleniti posidonium. Ex etiam consequat eum.</p>
+        <h1>{this.state.title}</h1>
+        <p>{this.state.description}</p>
         <Selections />
       </Grid.Column>
     </Grid.Row>
   </Grid>
-);
+)
+}
+
+};
 
 export default GridExampleVerticallyDivided;

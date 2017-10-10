@@ -10,7 +10,8 @@ class SegmentExampleRaisedSegments extends Component {
     this.state = {
       images: [],
       title: "",
-      price: ""
+      price: "",
+      product_id: "",
     };
 
     this.renderImages = this.renderImages.bind(this);
@@ -22,7 +23,7 @@ class SegmentExampleRaisedSegments extends Component {
 
   getProducts = () => {
   API.getProducts()
-  .then(res => this.setState({ title: res.data.map((product)=> product.title), price: res.data.map((product)=> product.price), images: res.data.map((product)=> product.image)}))
+  .then(res => this.setState({ product_id: res.data.map((product)=> product.product_id), title: res.data.map((product)=> product.title), price: res.data.map((product)=> product.price), images: res.data.map((product)=> product.image)}))
   .catch(err => console.log(err));
 };
 
@@ -32,7 +33,7 @@ renderImages() {
     for (var i = 0; i < 6; i++) {
     clothingImages.push(
 
-            <Link to={"/clothes/" + this.state.product_id}>
+            <Link to={"/type/" + this.state.product_id[i]}>
               <Card>
                 <Image src={this.state.images[i]} />
                 <Card.Content>
