@@ -10,5 +10,7 @@ import Type from "./pages/Type";
 import Checkout from "./pages/Checkout";
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(<Type />, document.getElementById('root'));
+
 registerServiceWorker();
