@@ -11,6 +11,6 @@ import Checkout from "./pages/Checkout";
 import registerServiceWorker from './registerServiceWorker';
 
 
-ReactDOM.render(<Type />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 registerServiceWorker();
