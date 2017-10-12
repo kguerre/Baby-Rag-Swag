@@ -31,19 +31,15 @@ renderImages() {
   let clothingImages= [];
 
     for (var i = 0; i < 6; i++) {
-    clothingImages.push(
-
-            <Link to={"/type/" + this.state.product_id[i]}>
-              <Card>
-                <Image src={this.state.images[i]} />
-                <Card.Content>
-                  <Card.Header> {this.state.title[i]} </Card.Header>
-                  <Card.Description> {this.state.price[i]} </Card.Description>
-                </Card.Content>
-              </Card>
-            </Link>
-
-    )
+    clothingImages.push(<Link to={"/product/" + this.state.product_id[i]}>
+        <Card className="clothes-image">
+          <Image src={this.state.images[i]} />
+          <Card.Content>
+            <Card.Header> {this.state.title[i]} </Card.Header>
+            <Card.Description> ${this.state.price[i]} </Card.Description>
+          </Card.Content>
+        </Card>
+      </Link>);
   console.log(this.state.images[i])
   console.log(this.state.images.length)
 
@@ -102,15 +98,11 @@ render() {
     <Grid.Row>
       <h1 size="massive">Apparel</h1>
     </Grid.Row>
+    <br/>
+    <br/>
     <Grid.Row columns={3}>
       <Grid>
-        <Grid.Row columns={3}>
-          <Grid.Column>
-
-            {this.renderImages()}
-
-        </Grid.Column>
-        </Grid.Row>
+        {this.renderImages()}
       </Grid>
     </Grid.Row>
   </Grid.Column>

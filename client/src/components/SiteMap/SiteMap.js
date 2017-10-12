@@ -3,9 +3,9 @@ import { Segment, Grid, Image } from "semantic-ui-react";
 import "./SiteMap.css";
 
 const SegmentExampleInverted = () => (
-  <Segment color="gray">
+  <Segment color="grey">
     <Grid>
-      <Grid.Row columns={3}>
+      <Grid.Row columns={3} className="sitemap">
         <Grid.Column>
           <ul>
             <li className="bold">Apparel</li>
