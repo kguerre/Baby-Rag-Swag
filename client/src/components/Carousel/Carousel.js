@@ -10,17 +10,17 @@ const GridExampleVerticallyDivided = () => (
         <Grid.Column className="carousel-column">
           <Reveal animated="small fade">
             <Reveal.Content visible>
-              <Image src="/assets/images/brs1.jpg" className="carousel" />
+              <Image src="/assets/images/brs5.jpg" className="carousel" />
             </Reveal.Content>
             <Reveal.Content hidden>
-              <Image src="/assets/images/brs7.jpeg" className="carousel" />
+              <Image src="/assets/images/brs6.jpg" className="carousel" />
             </Reveal.Content>
           </Reveal>
         </Grid.Column>
         <Grid.Column className="carousel-column">
           <Reveal animated="small fade">
             <Reveal.Content visible>
-              <Image src="/assets/images/brs8.jpg" className="carousel" />
+              <Image src="/assets/images/brs7.jpeg" className="carousel" />
             </Reveal.Content>
             <Reveal.Content hidden>
               <Image src="/assets/images/brs2.jpg" className="carousel" />

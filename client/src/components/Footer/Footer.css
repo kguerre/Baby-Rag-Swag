@@ -3,3 +3,6 @@ div.ui.black.large.inverted.segment.footer{
     position: fixed;
     width: 100%;
 }
+p.footer{
+    margin-left: 38em;
+}

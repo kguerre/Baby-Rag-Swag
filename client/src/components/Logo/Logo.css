@@ -1,0 +1,11 @@
+div.ui.grid{
+    margin: 0 auto;
+}
+div.ui.huge.header.title{
+    /* font-family: 'Lobster',cursive; */
+    font-family: 'Permanent Marker',cursive;
+    font-size: 8em;
+}
+img.ui.image.logo{
+    margin-left: 90px;
+}

@@ -4,7 +4,7 @@ import "./Footer.css";
 
 const SegmentExampleColored = () => (
   <Grid.Row>
-    <Segment inverted color="black" size="large" className="footer">Copyright &copy; 2017 KMC</Segment>
+    <Segment inverted color="black" size="large" className="footer"><p className="footer">Copyright &copy; 2017 KMC</p></Segment>
   </Grid.Row>
 );
 

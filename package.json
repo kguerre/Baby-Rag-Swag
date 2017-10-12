@@ -4,7 +4,9 @@
   "description": "ecommerce site for baby clothes",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "server": "node server.js",
+    "client": "cd client && npm run start",
+    "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
     "build": "cd client && npm run build",
     "deploy": "npm run build && git add . && git commit -m \"Building for production\" && git push heroku master",
     "seed": "node scripts/seedDB",
