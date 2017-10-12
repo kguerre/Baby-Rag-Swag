@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const userController = require("../../controllers/usercontroller");
 const productController = require("../../controllers/productcontroller");
+const cartController = require("../../controllers/cartcontroller");
 
 
 // Matches with "/api/products"
@@ -20,6 +21,9 @@ router
   .get(userController.findUserById)
   .put(userController.updateUser)
   .delete(userController.removeUser);
+  // .get(cartController.findById);
+  // .put(cartController.update);
+
 
 
 module.exports = router;

@@ -13,7 +13,7 @@ module.exports = {
   findById: function(req, res) {
     db.Product
       .findOne({product_id: req.params.id})
-      .findById(req.params.id)
+      // .findById(req.params.id)
       .then(dbModel => {
         console.log(dbModel)
         res.json(dbModel)

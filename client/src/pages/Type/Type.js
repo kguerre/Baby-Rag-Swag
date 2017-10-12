@@ -9,10 +9,11 @@ import Footer from "../../components/Footer";
 
 class Type extends Component {
   render() {
+    console.log(this.props.match)
     return (
       <div>
         <Menu />
-        <Content />
+        <Content productId= {this.props.match.params.id}/>
       </div>
     );
   }
