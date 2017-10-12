@@ -12,9 +12,9 @@ module.exports = {
   //get item by id
   findById: function(req, res) {
     db.Product
-      // .findOne({product_id: req.params.id})
+      .findOne({product_id: req.params.id})
       // .findById(req.params.id)
-      .findOne({ _id: req.params.id })
+      // .findOne({ _id: req.params.id })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

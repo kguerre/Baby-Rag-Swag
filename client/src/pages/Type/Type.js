@@ -12,7 +12,7 @@ class Type extends Component {
     return (
       <div>
         <Menu />
-        <Content />
+        <Content productId= {this.props.match.params.id} />
       </div>
     );
   }

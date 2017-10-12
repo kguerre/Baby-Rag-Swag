@@ -8,31 +8,37 @@ class GridExampleVerticallyDivided extends Component {
   state = {
     product: {}
   };
-  
+
   componentDidMount() {
-    console.log(this.props.match)
-    API.getItem(this.props.match.params.id)
-      .then(res => this.setState({ product: res.data }))
-      .then(console.log(this.state))
+    API.getItem(this.props.productId)
+      .then(res => {
+        console.log(res.data);
+        this.setState({
+          description: res.data.description,
+          title: res.data.title,
+          price: res.data.price,
+          image: res.data.image
+        });
+      })
       .catch(err => console.log(err));
   }
-  
+
   render() {
-    return <Grid divided="vertically">
+    return (
+      <Grid divided="vertically">
         <Grid.Row columns={2}>
           <Grid.Column>
-            <Image src={this.state.product.image} />
+            <Image src={this.state.image} />
           </Grid.Column>
           <Grid.Column>
-            <h1>{this.state.product.title}</h1>
-            <h3>${this.state.product.price}</h3>
-            <p>
-              {this.state.product.description}
-            </p>
+            <h1>{this.state.title}</h1>
+            <h3>${this.state.price}</h3>
+            <p>{this.state.description}</p>
             <Selections />
           </Grid.Column>
         </Grid.Row>
       </Grid>
+    );
   }
 };
 
