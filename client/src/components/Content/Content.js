@@ -1,14 +1,19 @@
-import React, { Component} from "react";
-import {Link} from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import API from "../../utils/API";
-import { Grid, Image } from "semantic-ui-react";
+import { Grid, Image, Button } from "semantic-ui-react";
 import Selections from "../../components/Selections";
 
 class GridExampleVerticallyDivided extends Component {
-  state = {
-    product: {}
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      product: {},
+      cart: {}
+    };
 
+    this.handleAddToCart = this.handleAddToCart.bind(this);
+  }
   componentDidMount() {
     API.getItem(this.props.productId)
       .then(res => {
@@ -23,6 +28,24 @@ class GridExampleVerticallyDivided extends Component {
       .catch(err => console.log(err));
   }
 
+  handleAddToCart = event => {
+    // gather data put into schema -> send it as a update request
+    // request to update
+    //() => this.getCart(this.props.id)
+    event.preventDefault();
+    API.getCart()
+      .then(res => {
+        this.setState({
+          description: res.data.description,
+          title: res.data.title,
+          price: res.data.price,
+          image: res.data.image
+        })
+      })
+      .then(alert("This item has been added to your cart."))
+      .catch(err => console.log(err));
+  }
+
   render() {
     return (
       <Grid divided="vertically">
@@ -32,14 +55,14 @@ class GridExampleVerticallyDivided extends Component {
           </Grid.Column>
           <Grid.Column>
             <h1>{this.state.title}</h1>
-            <h3>${this.state.price}</h3>
             <p>{this.state.description}</p>
             <Selections />
+            <Button onClick={this.handleAddToCart}>Add to Cart</Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     );
   }
-};
+}
 
 export default GridExampleVerticallyDivided;

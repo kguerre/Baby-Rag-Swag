@@ -17,7 +17,6 @@ const DropdownExampleSearchSelectionTwo = () => (
     />
     <br/>
     <br />
-    <Button>Add to Cart</Button>
   </div>
 );
 
