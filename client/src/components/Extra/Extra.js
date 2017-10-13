@@ -21,7 +21,7 @@ const SegmentExampleCircular = () => (
     </Segment>
    </Grid.Column>
    <Grid.Column>
-    <Header size="huge" className="subtitle">We don't sell clothes.</Header>
+    <Header size="huge" className="subtitle">We don't sell clothes. It's a lifestyle.</Header>
    </Grid.Column>
    <Grid.Column>
     <Segment circular style={square}>
