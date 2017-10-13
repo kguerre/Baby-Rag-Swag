@@ -2,6 +2,7 @@ import React, { Component} from "react";
 import API from "../../utils/API";
 import { Segment, Grid, Image, Row, Card, Icon } from "semantic-ui-react";
 import {Link} from "react-router-dom";
+import "./Sidebar.css";
 
 class SegmentExampleRaisedSegments extends Component {
   state = {
@@ -76,7 +77,7 @@ render() {
           <Grid>
             <Grid.Row columns={3}>
             {this.state.products.map(product => (
-              <Grid.Column>
+              <Grid.Column className="apparel">
               <Link to={"/product/" + product.product_id}>
                 <Card key={product.product_id}>
                   <Image src={product.image} />

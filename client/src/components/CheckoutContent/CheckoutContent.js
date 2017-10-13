@@ -10,12 +10,12 @@ const GridVerticallyDivided = () => (
       <Grid.Column>
         <Item.Group relaxed>
           <Item>
-            <Item.Image size="small" src="/assets/images/baby1.jpeg" />
+            <Item.Image size="small" src="/assets/images/bugstee.jpg" />
 
             <Item.Content verticalAlign="middle">
-              <Item.Header>BRS Basic Tee</Item.Header>
+              <Item.Header>BRS Buggy Tee</Item.Header>
               <Item.Description>Quantity: 1</Item.Description>
-              <Item.Description>Price: $10</Item.Description>
+              <Item.Description>Price: $24</Item.Description>
               <Item.Extra>
                 <Button floated="right">Remove</Button>
               </Item.Extra>
@@ -23,12 +23,12 @@ const GridVerticallyDivided = () => (
           </Item>
 
           <Item>
-            <Item.Image size="small" src="/assets/images/baby1.jpeg" />
+            <Item.Image size="small" src="/assets/images/penguinonesie.jpg" />
 
             <Item.Content verticalAlign="middle">
-              <Item.Header>BRS Basic Tee</Item.Header>
+              <Item.Header>BRS Penguin Onesie</Item.Header>
               <Item.Description>Quantity: 1</Item.Description>
-              <Item.Description>Price: $10</Item.Description>
+              <Item.Description>Price: $30</Item.Description>
               <Item.Extra>
                 <Button floated="right">Remove</Button>
               </Item.Extra>
@@ -36,25 +36,25 @@ const GridVerticallyDivided = () => (
           </Item>
 
           <Item>
-            <Item.Image size="small" src="/assets/images/baby1.jpeg" />
+            <Item.Image size="small" src="/assets/images/bluepants.jpg" />
 
             <Item.Content verticalAlign="middle">
-              <Item.Header>BRS Basic Tee</Item.Header>
+              <Item.Header>Basic BRS Baby Blues</Item.Header>
               <Item.Description>Quantity: 1</Item.Description>
-              <Item.Description>Price: $10</Item.Description>
+              <Item.Description>Price: $30</Item.Description>
               <Item.Extra>
                 <Button floated="right">Remove</Button>
               </Item.Extra>
             </Item.Content>
           </Item>
         </Item.Group>
-        <Header size="medium">
-          Your Total:{" "}
-        </Header>
+        <Header size="medium">Your Total: </Header>
         <Header size="medium" floated="right">
-          $35.00
+          $84.00
         </Header>
-        <Button fluid className="purchase">Purchase</Button>
+        <Button fluid className="purchase">
+          Purchase
+        </Button>
       </Grid.Column>
       <Grid.Column />
     </Grid.Row>

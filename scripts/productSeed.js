@@ -14,44 +14,44 @@ const productSeed = [
   {
     product_id: 1,
     item: "tops",
-    image: "/assets/images/baby1.jpeg",
-    title: "BRS Striped Tee",
-    description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
+    image: "/assets/images/bugstee.jpg",
+    title: "BRS Buggy Tee",
+    description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 50,
     price: 24
   },
   {
     product_id: 2,
     item: "tops",
-    image: "/assets/images/baby1.jpeg",
-    title: "Basic BRS Tee",
-    description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
+    image: "/assets/images/graphictee.jpg",
+    title: "BRS Graphic Tee",
+    description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 50,
     price: 20
   },
   {
     product_id: 3,
     item: "tops",
-    image: "/assets/images/baby1.jpeg",
-    title: "Navy BRS Baseball Tee",
-    description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
+    image: "/assets/images/patternedtee.jpg",
+    title: "BRS Patterned Tee",
+    description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 50,
     price: 20
   },
   {
     product_id: 4,
     item: "tops",
-    image: "/assets/images/baby1.jpeg",
-    title: "Camo BRS Baseball Tee",
-    description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
+    image: "/assets/images/penguinonesie.jpg",
+    title: "BRS Penguin Onesie",
+    description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 50,
     price: 30
   },
   {
     product_id: 5,
     item: "tops",
-    image: "/assets/images/baby1.jpeg",
-    title: "BRS Basic Tank",
+    image: "/assets/images/redtee.jpg",
+    title: "BRS Basic Red Tee",
     description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 50,
     price: 25
@@ -59,8 +59,8 @@ const productSeed = [
   {
     product_id: 6,
     item: "tops",
-    image: "/assets/images/baby1.jpeg",
-    title: "Limited BRS Logo Tank",
+    image: "/assets/images/stripedtank.jpg",
+    title: "BRS Striped Tank",
     description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 20,
     price: 45
@@ -68,17 +68,17 @@ const productSeed = [
   {
     product_id: 7,
     item: "bottoms",
-    image: "/assets/images/baby1.jpeg",
-    title: "Basic BRS Baby Joggers",
-    description: "Made with 100% Cotton. Sizes available: XS, SM, M, L, XL",
+    image: "/assets/images/bluepants.jpg",
+    title: "Basic BRS Baby Blues",
+    description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 60,
     price: 30
   },
   {
     product_id: 8,
     item: "bottoms",
-    image: "/assets/images/baby1.jpeg",
-    title: "Camo BRS Baby Joggers",
+    image: "/assets/images/blueshorts.jpg",
+    title: "BRS Baby Shorts",
     description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 55,
     price: 30
@@ -86,8 +86,8 @@ const productSeed = [
   {
     product_id: 9,
     item: "bottoms",
-    image: "/assets/images/baby1.jpeg",
-    title: "BRS Leggings",
+    image: "/assets/images/graypants.jpg",
+    title: "BRS Gray Pants",
     description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 55,
     price: 30
@@ -95,7 +95,7 @@ const productSeed = [
   {
     product_id: 10,
     item: "bottoms",
-    image: "/assets/images/baby1.jpeg",
+    image: "/assets/images/truckpants.jpg",
     title: "BRS Baby Sweats",
     description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 55,
@@ -104,8 +104,8 @@ const productSeed = [
   {
     product_id: 11,
     item: "bottoms",
-    image: "/assets/images/baby1.jpeg",
-    title: "BRS Shorts",
+    image: "/assets/images/jeanshorts.jpg",
+    title: "BRS Jean Shorts",
     description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 55,
     price: 20
@@ -113,8 +113,8 @@ const productSeed = [
   {
     product_id: 12,
     item: "bottoms",
-    image: "/assets/images/baby1.jpeg",
-    title: "Basic BSR Pants",
+    image: "/assets/images/stripedpants.jpg",
+    title: "Striped BSR Pants",
     description: "We don't sell clothes. This is a lifestyle. Dress your baby in cool, quality clothing. Made with 100% Cotton. Sizes available: XS, SM, M, L",
     quantity: 60,
     price: 25
