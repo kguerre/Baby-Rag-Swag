@@ -5,12 +5,12 @@
 
 **_Technologies Used_**
 
--MONGO 
--EXPRESS 
--REACT 
--NODE
--Semantic React
--Adobe CC Illustrator & PhotoShop 
+- MONGO 
+- EXPRESS 
+- REACT 
+- NODE
+- Semantic React
+- Adobe CC Illustrator & PhotoShop 
 
 
 
