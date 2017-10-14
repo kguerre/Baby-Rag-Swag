@@ -8,8 +8,6 @@
 
 ![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/br_swag.gif "Baby Rag Swag")
 
-
-
 ## Technologies Used
 - MONGO 
 - EXPRESS 
@@ -17,6 +15,13 @@
 - NODE
 - Semantic React
 - Adobe CC Illustrator & PhotoShop 
+
+![alt text](https://github.com/kguerre/Baby-Rag-Swag/ReactScreenShot.png "REACT")
+![alt text](https://github.com/kguerre/Baby-Rag-Swag/SchemaScreenShot.png "SCHEMA")
+![alt text](https://github.com/kguerre/Baby-Rag-Swag/RouterScreenShot.png "ROUTER")
+
+
+
 
 ## Collaborators 
 - Chirstoper Le
