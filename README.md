@@ -11,6 +11,6 @@
 - Adobe CC Illustrator & PhotoShop 
 
 ## Collaborators 
--Chirstoper Le
--Kathy Guerrero
--Myles Allen 
+- Chirstoper Le
+- Kathy Guerrero
+- Myles Allen 
