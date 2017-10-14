@@ -1,2 +1,4 @@
 # Baby-Rag-Swag
-ecommerce site for children's clothing
+![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/babyragswagbrs.png "Baby Rag Swag")
+
+Ecommerce site for children's clothing
