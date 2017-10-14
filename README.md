@@ -8,7 +8,7 @@
 
 ![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/br_swag.gif "Baby Rag Swag")
 
-## Technologies Used
+# Technologies Used
 - MONGO 
 - EXPRESS 
 - REACT 
@@ -32,7 +32,5 @@
 - Myles Allen 
 
 ### Models
-![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/myles_son.jpg "Carter Lang")
-
-![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/chris_nephew.JPG "Chris Nephew")
-
+- Carter Allen 
+- Chris' Newphew 
