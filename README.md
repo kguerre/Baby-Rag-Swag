@@ -17,7 +17,9 @@
 - Adobe CC Illustrator & PhotoShop 
 
 ![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/ReactScreenShot.png "REACT")
+
 ![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/SchemaScreenShot.png "SCHEMA")
+
 ![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/RouterScreenShot.png "ROUTER")
 
 
