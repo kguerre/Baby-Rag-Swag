@@ -1,7 +1,7 @@
 ### Problem
 - Baby Clothes all look the same. 
 
-# Baby Rag Swag = Solution !!!
+# Baby Rag Swag === Solution !
 *E-commerce App that sells premium baby clothing & accessories.* 
 - Sell limited, one of a kind baby clothing
 - Provide a platform for parents to easily purchase high quality, one of a kind clothing sets for babies
