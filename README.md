@@ -32,5 +32,6 @@
 
 ### Models
 ![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/myles_son.jpg "Carter Lang")
-![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/https://github.com/kguerre/Baby-Rag-Swag/blob/master/chris_nephew.JPG "Chris' Nephew")
+
+![alt text](https://github.com/kguerre/Baby-Rag-Swag/blob/master/chris_nephew.JPG "Chris Nephew")
 
